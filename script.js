@@ -11,10 +11,10 @@ const ratingList = $('.ratingList');
 
 let sortType = $('#type');
 
-movieRating.change(function(){
+movieRating.on('mousemove',function(){
   ratingDisplay.empty();
   ratingDisplay.append(movieRating.get(0).value / 10)  
-})
+});
 
 
 $('body').on('submit', function(e){
