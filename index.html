@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Movie Rating List</title>
+  <link rel="stylesheet"
+        href="https://unpkg.com/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Movie Ratings List</h1>
+
+  <form class="addMovie">
+    <div class="form-no-submit">
+      <div class="nameDiv">
+        <h2>Movie Name</h2>
+      <input type="text" class="movieName" >
+    </div>
+    <div class="ratingDiv">
+      <h2>Movie Rating</h2>
+      <input type="range" class="movieRating">
+      <div class ="ratingDisplay"></div>
+      </div>
+    </div>
+    <div class="buttonDiv">
+      <button>Submit</button>
+    </div>
+    <div class="border"></div>
+  </form>
+
+  <article class="sortingTools">
+    <label for="type">Sort By</label>
+      <select id="type" name="type">
+        <option value="a-z">Name [a-z]</option>
+        <option value="z-a">Name [z-a]</option>
+        <option value="lowestRated">rating [low-high]</option>
+        <option value="highestRated">rating [high-low]</option>
+      </select>
+      <button class='sort'>Sort</button>
+  </article>
+
+
+
+  <article>
+    <div class="nameList"></div>
+    <div class ="ratingList"></div>
+  </article>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="script.js"></script>
+</body>
